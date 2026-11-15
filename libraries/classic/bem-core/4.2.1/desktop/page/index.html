@@ -1,0 +1,726 @@
+<!DOCTYPE html><html class="ua_js_no" lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>page / desktop / 4.2.1 / bem-core / Classic BEM libraries / Libraries / BEM</title><script>(function(e,c){e[c]=e[c].replace(/(ua_js_)no/g,"$1yes");})(document.documentElement,"className");(function(d,n){d.documentElement.className+=" ua_svg_"+(d[n]&&d[n]("http://www.w3.org/2000/svg","svg").createSVGRect?"yes":"no");})(document,"createElementNS");</script><link rel="stylesheet" href="../../../../../../libraries.min.css?7259"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="bem-site-root" content="../../../../../../"><link rel="canonical" href="https://en-test.bem.info/libraries/classic/bem-core/4.2.1/desktop/page/"><link rel="alternate" hreflang="en" href="https://en-test.bem.info/libraries/classic/bem-core/4.2.1/desktop/page/"><link rel="alternate" hreflang="ru" href="https://ru-test.bem.info/libraries/classic/bem-core/4.2.1/desktop/page/"><meta name="robots" content="noindex"><meta property="og:image" content="../../../../../../og_image/logo_theme_generated.png"><meta property="og:url" content="../../../../../../libraries/classic/bem-core/4.2.1/desktop/page/"><meta property="og:type" content="article"><meta property="og:description" content="page"><meta property="og:keywords" content="libs, bem-core"><link rel="shortcut icon" href="../../../../../../favicon.ico"></head><body class="page"><div class="header page__head i-bem" data-bem='{"header":{}}'><div class="header__layout"><a class="logo header__logo" href="../../../../../../"><svg class="logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 84"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"/></svg></a><div class="lang-switcher header__lang">EN<span class="lang-switcher__separator"> </span><a class="lang-switcher__link" href="https://ru-test.bem.info/libraries/classic/bem-core/4.2.1/desktop/page/">RU</a></div><a class="header__forum" href="https://github.com/bem-site/bem.info/issues">Issues</a></div><div class="search header__search i-bem" data-bem='{"search":{}}'><div class="search__form"><span class="input input_type_search i-bem" data-bem='{"input":{}}'><span class="input__box"><input class="input__control" name="q" placeholder="Search the docs" autocomplete="off" type="search"></span></span><span class="search__submit" role="button" aria-label="search"><div class="search-icon search__submit-icon"><svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6"/><path d="M11 11l5 5"/></svg></div></span><div class="search__results" role="listbox"></div></div></div><ul class="breadcrumbs header__breadcrumbs"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../../../../../../libraries/">Libraries</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../../../../../../libraries/classic/">Classic BEM libraries</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../../../../../../libraries/classic/bem-core/">bem-core</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../../../../../../libraries/classic/bem-core/4.2.1/">4.2.1</a></li><li class="breadcrumbs__item breadcrumbs__version"><div class="select select_header select_mode_radio-check select_theme_islands select_size_l"></div></li></ul><div class="header__toggle"><span class="header__toggle-line"></span></div></div><div class="sitemap page__sitemap"><div class="sitemap__section sitemap__section_site_methodology"><h1 class="sitemap__title sitemap__title_site_methodology"><a class="sitemap__link" href="../../../../../../methodology/">Methodology</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/quick-start/">Quick Start</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/key-concepts/">Key concepts</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/naming-convention/">Naming convention</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/css/">CSS</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/html/">HTML</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/js/">JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/filestructure/">File structure</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/redefinition-levels/">Redefinition level</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/block-modification/">Block modification</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/build/">Build</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/declarations/">Declarations</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/solved-problems/">Solved problems</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/history/">History</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/articles/">Articles</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../methodology/faq/">FAQ</a></li></ul></div><div class="sitemap__section sitemap__section_site_technologies"><h1 class="sitemap__title sitemap__title_site_technologies"><a class="sitemap__link" href="../../../../../../technologies/">Technology</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../technologies/classic/">Classical BEM stack</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/classic/bemjson/">Data (BEMJSON)</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/classic/bem-xjst/">Templates (BEMHTML, BEMTREE)</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/classic/i-bem/">Client-side JavaScript (i-bem.js)</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/classic/deps/">Dependencies</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/classic/deps-spec/">DEPS specification</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/classic/project-stub/">Project stub</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../technologies/bem-react/">bem-react</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/motivation/">Why BEM if there's React?</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/quick-start/">Quick Start</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/structure/">Component structure</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/lazy/">Lazy modifiers</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/classname/">classname</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/classnames/">classnames</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/core/">core</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../technologies/bem-react/di/">di</a></li></ul></div><div class="sitemap__section sitemap__section_site_toolbox"><h1 class="sitemap__title sitemap__title_site_toolbox"><a class="sitemap__link" href="../../../../../../toolbox/">Toolbox</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../toolbox/enb/">ENB</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/api/">API</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/techs/">Technologies for working with files</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/cli/">Using the command line</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/terms/">Terminology</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/build-project/">How to build a project</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/write-tech/">How to write a technology</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/express/">Automation with express</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/enb/packages/">ENB packages</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../toolbox/bemhint/">bemhint</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/bemhint/css-naming/">CSS naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/bemhint/fs-naming/">File naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/bemhint/deps-schema/">DEPS schema</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/bemhint/deps-specification/">DEPS specification</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../toolbox/bem-tools/">bem-tools</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../toolbox/bemmet/">bemmet</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../toolbox/sdk/">SDK</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-walk/">@bem/sdk.walk</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-config/">@bem/sdk.config</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-naming-entity/">@bem/sdk.naming.entity </a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-naming-cell-stringify/">@bem/sdk.naming.cell.stringify </a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-naming-cell-pattern-parser/">@bem/sdk.naming.cell.pattern-parser</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-naming-file-stringify/">@bem/sdk.naming.file.stringify</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-decl/">@bem/sdk.decl </a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-bemjson-to-decl/">@bem/sdk.bemjson-to-decl</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-bemjson-to-jsx/">@bem/sdk.bemjson-to-jsx</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-import-notation/">@bem/sdk.import-notation</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-graph/">@bem/sdk.graph</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-deps/">@bem/sdk.deps</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-entity-name/">@bem/sdk.entity-name</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-file/">@bem/sdk.file</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-cell/">@bem/sdk.cell</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-bundle/">@bem/sdk.bundle</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../toolbox/sdk/bem-bemjson-node/">@bem/sdk.bemjson-node</a></li></ul></div><div class="sitemap__section sitemap__section_site_libraries"><h1 class="sitemap__title sitemap__title_site_libraries"><a class="sitemap__link" href="../../../../../../libraries/">Libraries</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../libraries/classic/">Classic BEM libraries</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../libraries/classic/bem-core/">bem-core</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../libraries/classic/bem-components/">bem-components</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../libraries/classic/bem-history/">bem-history</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../libraries/classic/principles/">Principles of BEM library development</a></li></ul></div><div class="sitemap__section sitemap__section_site_tutorials"><h1 class="sitemap__title sitemap__title_site_tutorials"><a class="sitemap__link" href="../../../../../../tutorials/">Tutorials</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../../../../tutorials/classic/">Classical BEM stack</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../tutorials/classic/quick-start-static/">Creating a static page</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../tutorials/classic/start-with-project-stub/">Starting a static BEM project</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../tutorials/classic/start-with-bem-express/">Starting a dynamic BEM project</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../tutorials/classic/i-bem/">i-bem.js tutorial</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../../../../tutorials/classic/dist-quick-start/">Dist bem-components: adding blocks to a page</a></li></ul></div></div><div class="page__menu"><ul class="nav page__nav"><li class="nav__item"><dl class="block-list blocks__list"><dt class="block-list__set-name">desktop</dt><dd class="block-list__set-list"><ul class="block-list__blocks"><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/clearfix/">clearfix</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/cookie/">cookie</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/dom/">dom</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/events/">events</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/functions/">functions</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/i-bem/">i-bem</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/i-bem-dom/">i-bem-dom</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/i18n/">i18n</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/identify/">identify</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/idle/">idle</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/inherit/">inherit</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/jquery/">jquery</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/keyboard/">keyboard</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/loader/">loader</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/next-tick/">next-tick</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/objects/">objects</a></li><li class="block-list__block block-list__block_current">page</li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/strings/">strings</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/tick/">tick</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/ua/">ua</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/uri/">uri</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../desktop/vow/">vow</a></li></ul></dd><dt class="block-list__set-name">touch-pad</dt><dd class="block-list__set-list"><ul class="block-list__blocks"><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/clearfix/">clearfix</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/cookie/">cookie</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/dom/">dom</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/events/">events</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/functions/">functions</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/i-bem/">i-bem</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/i-bem-dom/">i-bem-dom</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/i18n/">i18n</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/identify/">identify</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/idle/">idle</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/inherit/">inherit</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/jquery/">jquery</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/keyboard/">keyboard</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/loader/">loader</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/next-tick/">next-tick</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/objects/">objects</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/page/">page</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/strings/">strings</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/tick/">tick</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/ua/">ua</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/uri/">uri</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-pad/vow/">vow</a></li></ul></dd><dt class="block-list__set-name">touch-phone</dt><dd class="block-list__set-list"><ul class="block-list__blocks"><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/clearfix/">clearfix</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/cookie/">cookie</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/dom/">dom</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/events/">events</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/functions/">functions</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/i-bem/">i-bem</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/i-bem-dom/">i-bem-dom</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/i18n/">i18n</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/identify/">identify</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/idle/">idle</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/inherit/">inherit</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/jquery/">jquery</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/keyboard/">keyboard</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/loader/">loader</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/next-tick/">next-tick</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/objects/">objects</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/page/">page</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/strings/">strings</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/tick/">tick</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/ua/">ua</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/uri/">uri</a></li><li class="block-list__block"><a class="link block-list__link link__control i-bem" data-bem='{"link":{}}' role="link" href="../../touch-phone/vow/">vow</a></li></ul></dd></dl></li></ul></div><div class="page__main"><div class="block-info blocks__data article page__content"><div class="block-tabs i-bem" data-bem='{"block-tabs":{}}'><a class="block-tabs__tab block-tabs__tab_current" href="#docs">Documentation</a><a class="block-tabs__tab" href="#examples">Examples</a><a class="block-tabs__tab" href="#source">Source</a><div class="block-tabs__pane block-tabs__pane_active"><div class="block-doc article i-bem" data-bem='{"block-doc":{}}'><h1 id="page-1"><a href="#page-1" class="anchor"></a>page</h1>
+<p>This block provides templates that create a set of top-level HTML elements for a page: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.</p>
+<h2 id="overview-10"><a href="#overview-10" class="anchor"></a>Overview</h2>
+<h3 id="special-fields-of-the-block"><a href="#special-fields-of-the-block" class="anchor"></a>Special fields of the block</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#declfields-doctype">doctype</a></td>
+<td><code>String</code></td>
+<td>Use this field to redefine the DTD string for the current document.</td>
+</tr>
+<tr>
+<td><a href="#declfields-title">title</a></td>
+<td><code>String</code></td>
+<td>Use this field to specify the content of <code>&lt;title&gt;</code>.</td>
+</tr>
+<tr>
+<td><a href="#declfields-favicon">favicon</a></td>
+<td><code>String</code></td>
+<td>Use this field to specify the URL of the favicon for the page.</td>
+</tr>
+<tr>
+<td><a href="#declfields-head">head</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to add content to <code>&lt;head&gt;</code>.</td>
+</tr>
+<tr>
+<td><a href="#declfields-styles">styles</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to connect CSS style sheets to the document.</td>
+</tr>
+<tr>
+<td><a href="#declfields-scripts">scripts</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to embed scripts in the body of the document.</td>
+</tr>
+<tr>
+<td><a href="#declfields-content">content</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to set the page content.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="elements-of-the-block-6"><a href="#elements-of-the-block-6" class="anchor"></a>Elements of the block</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-css">css</a></td>
+<td><code>BEMJSON</code></td>
+<td>Connects CSS using a URL or a string.</td>
+</tr>
+<tr>
+<td><a href="#elems-js">js</a></td>
+<td><code>BEMJSON</code></td>
+<td>Connects JS using a URL or a string.</td>
+</tr>
+<tr>
+<td><a href="#elems-meta">meta</a></td>
+<td><code>BEMJSON</code></td>
+<td>Creates <code>&lt;meta&gt;</code> HTML elements.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="special-fields-of-block-elements"><a href="#special-fields-of-block-elements" class="anchor"></a>Special fields of block elements</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-css">css</a></td>
+<td><a href="#elems-css-declfields-url">url</a></td>
+<td><code>String</code></td>
+<td>Sets the URL for downloading styles.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-css-declfields-content">content</a></td>
+<td><code>String</code></td>
+<td>Sets styles in string format.</td>
+</tr>
+<tr>
+<td><a href="#elems-js">js</a></td>
+<td><a href="#elems-css-declfields-url">url</a></td>
+<td><code>String</code></td>
+<td>Sets the URL for downloading a script.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-css-declfields-content">content</a></td>
+<td><code>String</code></td>
+<td>Sets scripts in string format</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-13"><a href="#public-block-technologies-13" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>bh.js</code></li>
+<li><code>bemhtml</code></li>
+</ul>
+<h2 id="description-9"><a href="#description-9" class="anchor"></a>Description</h2>
+<p>This block is responsible for creating top-level HTML elements, connecting CSS, JS, and <code>&lt;meta&gt;</code> elements to a page, and defining the title. The BEMJSON declaration for the block and its elements have special fields reserved for this purpose.</p>
+<p><a name="declfields"></a></p>
+<h3 id="special-fields-of-the-block-1"><a href="#special-fields-of-the-block-1" class="anchor"></a>Special fields of the block</h3>
+<p><a name="declfields-doctype"></a></p>
+<h4 id="doctype-field"><a href="#doctype-field" class="anchor"></a><code>doctype</code> field</h4>
+<p>Type: <code>String</code>.</p>
+<p>Use this field to explicitly set the DTD (Document Type Definition) for the current document. If omitted, <code>&lt;!DOCTYPE html&gt;</code> is used by default.</p>
+<p><a name="declfields-title"></a></p>
+<h4 id="title-field"><a href="#title-field" class="anchor"></a><code>title</code> field</h4>
+<p>Type: <code>String</code>.</p>
+<p>Title of the page. It becomes the <code>&lt;title&gt;</code> HTML element.</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/1XbHawxtflVM-qdPJwcvW-qayC4.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439484"}}' id="uniq1794764669439484" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Block page<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439484"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439484" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439485"}}' id="uniq1794764669439485" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'title'</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Block page'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439485"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439485" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439486"}}' id="uniq1794764669439486" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439486"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439486" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/1XbHawxtflVM-qdPJwcvW-qayC4.en.html"></iframe></div>
+<p><a name="declfields-favicon"></a></p>
+<h4 id="favicon-field"><a href="#favicon-field" class="anchor"></a><code>favicon</code> field</h4>
+<p>Type: <code>String</code>.</p>
+<p>Use this field to specify the URL of the favicon for the page:</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/X-TO8Z7nDRiM8DF4H6051sfaxTw.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439487"}}' id="uniq1794764669439487" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"shortcut icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"favicon.ico"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with users favicon.ico<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439487"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439487" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439488"}}' id="uniq1794764669439488" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'title'</span>,
+    <span class="hljs-attr">favicon</span>: <span class="hljs-string">'favicon.ico'</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with users favicon.ico'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439488"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439488" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439489"}}' id="uniq1794764669439489" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439489"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439489" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/X-TO8Z7nDRiM8DF4H6051sfaxTw.en.html"></iframe></div>
+<p><a name="declfields-head"></a></p>
+<h4 id="head-field"><a href="#head-field" class="anchor"></a><code>head</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Use this field to add content to the <code>&lt;head&gt;</code> <code>HTML</code> element that is defined in the block template:</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/C5JlpbYiEJJi1-CF_BiQsfyVBfE.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439490"}}' id="uniq1794764669439490" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"jquery-min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Yet another webdev blog"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with JS and meta-data<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439490"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439490" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439491"}}' id="uniq1794764669439491" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'title'</span>,
+    <span class="hljs-attr">head</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'jquery-min.js'</span>
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'meta'</span>,
+            <span class="hljs-attr">attrs</span>: {
+                <span class="hljs-attr">name</span>: <span class="hljs-string">'description'</span>,
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'Yet another webdev blog'</span>
+            }
+        }
+    ],
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with JS and meta-data'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439491"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439491" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439492"}}' id="uniq1794764669439492" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439492"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439492" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/C5JlpbYiEJJi1-CF_BiQsfyVBfE.en.html"></iframe></div>
+<p><a name="declfields-styles"></a></p>
+<h4 id="styles-field"><a href="#styles-field" class="anchor"></a><code>styles</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Use this field to connect <code>CSS</code>:</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/HYH3vutSDd2joR1oc9kPHCb6K-w.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439493"}}' id="uniq1794764669439493" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"_index.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with CSS<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439493"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439493" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439494"}}' id="uniq1794764669439494" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'title'</span>,
+    <span class="hljs-attr">styles</span>: {
+        <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+        <span class="hljs-attr">url</span>: <span class="hljs-string">'_index.css'</span>
+    },
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with CSS'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439494"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439494" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439495"}}' id="uniq1794764669439495" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439495"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439495" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/HYH3vutSDd2joR1oc9kPHCb6K-w.en.html"></iframe></div>
+<p><a name="declfields-scripts"></a></p>
+<h4 id="scripts-field"><a href="#scripts-field" class="anchor"></a><code>scripts</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Embeds JS in the body of the page, at the end of the <code>&lt;body&gt;</code> HTML element:</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/A_vbuJFTtKNZSs2LP0r6Oc8Kwsw.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439496"}}' id="uniq1794764669439496" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with JS in body
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"_index.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439496"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439496" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439497"}}' id="uniq1794764669439497" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'title'</span>,
+    <span class="hljs-attr">scripts</span>: {
+        <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+        <span class="hljs-attr">url</span>: <span class="hljs-string">'_index.js'</span>
+    },
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with JS in body'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439497"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439497" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439498"}}' id="uniq1794764669439498" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439498"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439498" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/A_vbuJFTtKNZSs2LP0r6Oc8Kwsw.en.html"></iframe></div>
+<p><a name="declfields-content"></a></p>
+<h4 id="content-field"><a href="#content-field" class="anchor"></a><code>content</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Use this field to set the page content.</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/XFUP7dDCxja7SQdMGjfwW5UDO2M.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439499"}}' id="uniq1794764669439499" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"link link_pseudo_yes link_togcolor_yes link_color_green"</span>&gt;</span>Pseudo link<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439499"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439499" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439500"}}' id="uniq1794764669439500" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'title'</span>,
+    <span class="hljs-attr">content</span>: {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+        <span class="hljs-attr">mods</span>: {
+            <span class="hljs-attr">pseudo</span>: <span class="hljs-string">'yes'</span>,
+            <span class="hljs-attr">togcolor</span>: <span class="hljs-string">'yes'</span>,
+            <span class="hljs-attr">color</span>: <span class="hljs-string">'green'</span>
+        },
+        <span class="hljs-attr">url</span>: <span class="hljs-string">'#'</span>,
+        <span class="hljs-attr">target</span>: <span class="hljs-string">'_blank'</span>,
+        <span class="hljs-attr">title</span>: <span class="hljs-string">'Click me'</span>,
+        <span class="hljs-attr">content</span>: <span class="hljs-string">'Pseudo link'</span>
+    }
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439500"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439500" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439501"}}' id="uniq1794764669439501" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>,
+    {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+        <span class="hljs-attr">mods</span>: {
+            <span class="hljs-attr">pseudo</span>: <span class="hljs-string">'yes'</span>,
+            <span class="hljs-attr">togcolor</span>: <span class="hljs-string">'yes'</span>,
+            <span class="hljs-attr">color</span>: <span class="hljs-string">'green'</span>
+        }
+    }
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439501"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439501" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/XFUP7dDCxja7SQdMGjfwW5UDO2M.en.html"></iframe></div>
+<p><a name="elems"></a></p>
+<h3 id="elements-of-the-block-7"><a href="#elements-of-the-block-7" class="anchor"></a>Elements of the block</h3>
+<p><a name="elems-css"></a></p>
+<h4 id="css-element"><a href="#css-element" class="anchor"></a><code>css</code> element</h4>
+<p>Connects CSS using a URL or a string. Depending on whether the <code>url</code> field is specified in the element declaration, an HTML element is created with the tag:</p>
+<ul>
+<li><code>&lt;link&gt;</code> and the <code>stylesheet</code> property, if <code>url</code> is specified.</li>
+<li><code>&lt;style&gt;</code>, if <code>url</code> is omitted. In this case, it is assumed that the element content is passed using the <code>content</code> property in the element&#39;s BEMJSON declaration.</li>
+</ul>
+<p><a name="elems-css-declfields-content"></a></p>
+<h5 id="specialized-content-field"><a href="#specialized-content-field" class="anchor"></a>Specialized <code>content</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Use this field for explicitly passing the content of the <code>&lt;style&gt;</code> HTML element:</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/PeIoncFtgjqSTzb7R7VpvEI_Av0.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439502"}}' id="uniq1794764669439502" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Page title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-class">.page</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#f00</span>
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with tag
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="xml">
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439502"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439502" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439503"}}' id="uniq1794764669439503" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Page title'</span>,
+    <span class="hljs-attr">styles</span>: {
+        <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+        <span class="hljs-attr">content</span>: <span class="hljs-string">'.page { color : #f00 }'</span>
+    },
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with tag &lt;style&gt;'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439503"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439503" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439504"}}' id="uniq1794764669439504" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439504"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439504" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/PeIoncFtgjqSTzb7R7VpvEI_Av0.en.html"></iframe></div>
+<p><a name="elems-css-declfields-url"></a></p>
+<h5 id="specialized-url-field"><a href="#specialized-url-field" class="anchor"></a>Specialized <code>url</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Sets the URL for downloading CSS. The value of the <code>url</code> field in the BEMJSON declaration is passed to the <code>href</code> property in the created HTML element.</p>
+<p><a name="elems-js"></a></p>
+<h4 id="js-element"><a href="#js-element" class="anchor"></a><code>js</code> element</h4>
+<p>Connects JS using a URL or a string. Creates the <code>&lt;script&gt;</code> HTML element.</p>
+<p><a name="elems-js-declfields-content"></a></p>
+<h5 id="specialized-content-field-1"><a href="#specialized-content-field-1" class="anchor"></a>Specialized <code>content</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Use this field for explicitly passing the content of the <code>&lt;script&gt;</code> HTML element:</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/gyO3dP0eqhvRshKuh46fxynk9hQ.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439505"}}' id="uniq1794764669439505" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Page title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with tag
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        &lt; script &gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">document</span>.title)
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439505"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439505" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439506"}}' id="uniq1794764669439506" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Page title'</span>,
+    <span class="hljs-attr">scripts</span>: {
+        <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+        <span class="hljs-attr">content</span>: <span class="hljs-string">'console.log(document.title)'</span>
+    },
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with tag &lt;script&gt;'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439506"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439506" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439507"}}' id="uniq1794764669439507" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439507"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439507" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/gyO3dP0eqhvRshKuh46fxynk9hQ.en.html"></iframe></div>
+<p><a name="elems-js-declfields-url"></a></p>
+<h5 id="specialized-url-field-1"><a href="#specialized-url-field-1" class="anchor"></a>Specialized <code>url</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Sets the URL for downloading a script. The value of the <code>url</code> field in the BEMJSON declaration is passed to the <code>src</code> property in the created HTML element.</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/wRN9Y9I9KBSKKEWD1yt-9EuU5Lc.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439508"}}' id="uniq1794764669439508" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Page title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"_index.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with tag style<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439508"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439508" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439509"}}' id="uniq1794764669439509" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Page title'</span>,
+    <span class="hljs-attr">styles</span>: {
+        <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+        <span class="hljs-attr">url</span>: <span class="hljs-string">'_index.css'</span>
+    },
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with tag style'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439509"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439509" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439510"}}' id="uniq1794764669439510" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439510"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439510" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/wRN9Y9I9KBSKKEWD1yt-9EuU5Lc.en.html"></iframe></div>
+<p><a name="elems-meta"></a></p>
+<h4 id="meta-element"><a href="#meta-element" class="anchor"></a><code>meta</code> element</h4>
+<p>Creates <code>&lt;meta&gt;</code> HTML elements and defines user metadata for them. Metadata is passed as keys and values of attribute hashes, the <code>attrs</code> properties in the BEMJSON declaration of the element:</p>
+<div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/4fuUSAPd1pnoU76FCeeED0ohlTU.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439511"}}' id="uniq1794764669439511" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"example.css"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"keywords"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"js, css, html"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Page with CSS и meta-data<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439511"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439511" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439512"}}' id="uniq1794764669439512" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'title'</span>,
+    <span class="hljs-attr">head</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'example.css'</span>
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'meta'</span>,
+            <span class="hljs-attr">attrs</span>: {
+                <span class="hljs-attr">name</span>: <span class="hljs-string">'keywords'</span>,
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'js, css, html'</span>
+            }
+        }
+    ],
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Page with CSS и meta-data'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439512"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439512" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439513"}}' id="uniq1794764669439513" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439513"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439513" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/4fuUSAPd1pnoU76FCeeED0ohlTU.en.html"></iframe></div>
+<p>For more information, see the documentation for <code>&lt;meta&gt;</code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">at MDN</a>.</p>
+</div></div><div class="block-tabs__pane"><div class="block-examples"><div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/10-simple.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439514"}}' id="uniq1794764669439514" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Простой пример html/head/body-обвязки страницы<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"_10-simple.css"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"_10-simple.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"keywords"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"BEM"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"shortcut icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"//bem.info/favicon.ico"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bla"</span>&gt;</span>Простой пример обвязки страницы<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439514"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439514" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439515"}}' id="uniq1794764669439515" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Простой пример html/head/body-обвязки страницы'</span>,
+    <span class="hljs-attr">favicon</span>: <span class="hljs-string">'//bem.info/favicon.ico'</span>,
+    <span class="hljs-attr">head</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'_10-simple.css'</span>
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'_10-simple.js'</span>
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'meta'</span>,
+            <span class="hljs-attr">attrs</span>: {
+                <span class="hljs-attr">name</span>: <span class="hljs-string">'keywords'</span>,
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'BEM'</span>
+            }
+        }
+    ],
+    <span class="hljs-attr">content</span>: {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'bla'</span>,
+        <span class="hljs-attr">content</span>: <span class="hljs-string">'Простой пример обвязки страницы'</span>
+    }
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439515"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439515" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439516"}}' id="uniq1794764669439516" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>,
+    <span class="hljs-string">'bla'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439516"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439516" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/10-simple.en.html"></iframe></div><div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/20-doctype.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439517"}}' id="uniq1794764669439517" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример произвольного doctype<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Произвольный doctype<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439517"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439517" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439518"}}' id="uniq1794764669439518" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">doctype</span>: <span class="hljs-string">'&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Пример произвольного doctype'</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Произвольный doctype'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439518"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439518" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439519"}}' id="uniq1794764669439519" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439519"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439519" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/20-doctype.en.html"></iframe></div><div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/40-es5-shims.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439520"}}' id="uniq1794764669439520" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример подключения es5-shims для IE<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--[if lt IE 9]&gt;&lt;script src="https://yastatic.net/es5-shims/0.0.1/es5-shims.min.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Подключение es5-shims для IE<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439520"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439520" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439521"}}' id="uniq1794764669439521" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Пример подключения es5-shims для IE'</span>,
+    <span class="hljs-attr">head</span>: [
+        <span class="hljs-string">'&lt;!--[if lt IE 9]&gt;'</span>,
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'https://yastatic.net/es5-shims/0.0.1/es5-shims.min.js'</span>
+        },
+        <span class="hljs-string">'&lt;![endif]--&gt;'</span>
+    ],
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Подключение es5-shims для IE'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439521"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439521" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439522"}}' id="uniq1794764669439522" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439522"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439522" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/40-es5-shims.en.html"></iframe></div><div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/10-simple.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439523"}}' id="uniq1794764669439523" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Простой пример html/head/body-обвязки страницы<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"_10-simple.css"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"_10-simple.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"keywords"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"BEM"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"shortcut icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"//bem.info/favicon.ico"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bla"</span>&gt;</span>Простой пример обвязки страницы<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439523"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439523" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439524"}}' id="uniq1794764669439524" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Простой пример html/head/body-обвязки страницы'</span>,
+    <span class="hljs-attr">favicon</span>: <span class="hljs-string">'//bem.info/favicon.ico'</span>,
+    <span class="hljs-attr">head</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'_10-simple.css'</span>
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'_10-simple.js'</span>
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'meta'</span>,
+            <span class="hljs-attr">attrs</span>: {
+                <span class="hljs-attr">name</span>: <span class="hljs-string">'keywords'</span>,
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'BEM'</span>
+            }
+        }
+    ],
+    <span class="hljs-attr">content</span>: {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'bla'</span>,
+        <span class="hljs-attr">content</span>: <span class="hljs-string">'Простой пример обвязки страницы'</span>
+    }
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439524"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439524" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439525"}}' id="uniq1794764669439525" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>,
+    <span class="hljs-string">'bla'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439525"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439525" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/10-simple.en.html"></iframe></div><div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/20-doctype.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439526"}}' id="uniq1794764669439526" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример произвольного doctype<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Произвольный doctype<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439526"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439526" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439527"}}' id="uniq1794764669439527" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">doctype</span>: <span class="hljs-string">'&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Пример произвольного doctype'</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Произвольный doctype'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439527"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439527" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439528"}}' id="uniq1794764669439528" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439528"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439528" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/20-doctype.en.html"></iframe></div><div class="block-example i-bem" data-bem='{"block-example":{}}'><div class="block-example__info"><a class="link link_theme_islands link__control i-bem" data-bem='{"link":{}}' role="link" href="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/40-es5-shims.en.html" target="_blank">Open in a new window</a><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439529"}}' id="uniq1794764669439529" aria-hidden="true"><pre class="block-source"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ua_js_no"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример подключения es5-shims для IE<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, c</span>) </span>{
+            e[c] = e[c].replace(<span class="hljs-regexp">/(ua_js_)no/g</span>, <span class="hljs-string">"$1yes"</span>);
+        })(<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-string">"className"</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--[if lt IE 9]&gt;&lt;script src="https://yastatic.net/es5-shims/0.0.1/es5-shims.min.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>Подключение es5-shims для IE<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439529"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439529" aria-expanded="false" role="button" tabindex="0">HTML</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439530"}}' id="uniq1794764669439530" aria-hidden="true"><pre class="block-source">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'Пример подключения es5-shims для IE'</span>,
+    <span class="hljs-attr">head</span>: [
+        <span class="hljs-string">'&lt;!--[if lt IE 9]&gt;'</span>,
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'https://yastatic.net/es5-shims/0.0.1/es5-shims.min.js'</span>
+        },
+        <span class="hljs-string">'&lt;![endif]--&gt;'</span>
+    ],
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'Подключение es5-shims для IE'</span>
+}</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439530"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439530" aria-expanded="false" role="button" tabindex="0">BEMJSON</span><div class="popup popup_theme_islands popup_autoclosable popup_target_anchor dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m i-bem" data-bem='{"popup":{},"dropdown":{"id":"uniq1794764669439531"}}' id="uniq1794764669439531" aria-hidden="true"><pre class="block-source">[
+    <span class="hljs-string">'page'</span>
+]</pre></div><span class="link link_pseudo link_theme_islands dropdown dropdown_switcher_link dropdown_theme_islands dropdown_size_m dropdown__switcher dropdown__switcher_switcher_link link__control i-bem" data-bem='{"link":{},"dropdown":{"id":"uniq1794764669439531"},"dropdown__switcher":{}}' aria-haspopup="true" aria-controls="uniq1794764669439531" aria-expanded="false" role="button" tabindex="0">deps</span></div><iframe class="block-example__preview" src="https://en-test.bem.info/_st_/bem-core-examples/4.2.1/desktop/page/40-es5-shims.en.html"></iframe></div></div></div><div class="block-tabs__pane"><ul class="block-sources"><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.bemhtml.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.bemhtml.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.bh.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.bh.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.deps.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.deps.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.en.md">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.en.md</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.en.title.txt">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.en.title.txt</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.ru.md">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.ru.md</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.ru.title.txt">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/page.ru.title.txt</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__css/page__css.bemhtml.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__css/page__css.bemhtml.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__css/page__css.bh.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__css/page__css.bh.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__js/page__js.bemhtml.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__js/page__js.bemhtml.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__js/page__js.bh.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/page/__js/page__js.bh.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/page.deps.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/page.deps.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/page.ru.md">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/page.ru.md</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/__conditional-comment/page__conditional-comment.bemhtml.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/__conditional-comment/page__conditional-comment.bemhtml.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/__conditional-comment/page__conditional-comment.bh.js">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/__conditional-comment/page__conditional-comment.bh.js</a></li><li class="block-sources__item"><a class="link link__link link__control i-bem" data-bem='{"link":{}}' role="link" href="https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/__conditional-comment/page__conditional-comment.ru.md">https://github.com/bem/bem-core/blob/v4.2.1//Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/page/__conditional-comment/page__conditional-comment.ru.md</a></li></ul></div></div></div><div><div></div></div></div><div class="page__side"><aside class="aside page__aside"><div class="aside__group"><ul class="article-tags aside__tags"><li class="article-tags__tag"><a class="article-tags__link">libs</a></li><li class="article-tags__tag"><a class="article-tags__link">bem-core</a></li></ul><div class="social-likes aside__social"><a class="social-likes__service social-likes__service_type_facebook" href="https://www.facebook.com/sharer.php?s=100&amp;url=https%3A%2F%2Fen-test.bem.info%2Flibraries%2Fclassic%2Fbem-core%2F4.2.1%2Fdesktop%2Fpage%2F&amp;title=page&amp;image=">Facebook</a> <a class="social-likes__service social-likes__service_type_vk" href="http://vk.com/share.php?&amp;url=https%3A%2F%2Fen-test.bem.info%2Flibraries%2Fclassic%2Fbem-core%2F4.2.1%2Fdesktop%2Fpage%2F&amp;title=page&amp;image=">VKontakte</a> <a class="social-likes__service social-likes__service_type_twitter" href="https://twitter.com/share?&amp;url=https%3A%2F%2Fen-test.bem.info%2Flibraries%2Fclassic%2Fbem-core%2F4.2.1%2Fdesktop%2Fpage%2F&amp;title=page&amp;image=">Twitter</a></div></div><div class="article-amendments aside__amendments"></div></aside></div><footer class="footer page__foot"><div class="footer__layout"><ul class="footer__community"><li class="footer__channel"><a class="footer__channel-link" href="https://telegram.me/bem_en">Telegram</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://www.facebook.com/groups/bem.info/">Facebook</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://twitter.com/bem_en/">Twitter</a></li></ul></div></footer><script>(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16972024 = new Ya.Metrika({"id":"16972024","webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16972024" style="position:absolute; left:-9999px;"></div></noscript><div class="yandex-metrica-api i-bem" data-bem='{"yandex-metrica-api":{"counterId":"16972024"}}'></div><script src="../../../../../../_client/client.js?7259" type="module"></script></body></html>

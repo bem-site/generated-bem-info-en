@@ -1,0 +1,406 @@
+<!DOCTYPE html><html class="ua_js_no" lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>DEPS specification / Classical BEM stack / Technology / BEM</title><script>(function(e,c){e[c]=e[c].replace(/(ua_js_)no/g,"$1yes");})(document.documentElement,"className");(function(d,n){d.documentElement.className+=" ua_svg_"+(d[n]&&d[n]("http://www.w3.org/2000/svg","svg").createSVGRect?"yes":"no");})(document,"createElementNS");</script><link rel="stylesheet" href="../../../technologies.min.css?4356"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="bem-site-root" content="../../../"><link rel="canonical" href="https://en-test.bem.info/technologies/classic/deps-spec/"><link rel="alternate" hreflang="en" href="https://en-test.bem.info/technologies/classic/deps-spec/"><link rel="alternate" hreflang="ru" href="https://ru-test.bem.info/technologies/classic/deps-spec/"><meta name="robots" content="noindex"><meta property="og:image" content="../../../og_image/logo_theme_generated.png"><meta property="og:url" content="../../../technologies/classic/deps-spec/"><meta property="og:type" content="article"><meta property="og:description" content="DEPS specification"><meta property="og:keywords" content="deps"><link rel="shortcut icon" href="../../../favicon.ico"></head><body class="page"><div class="header page__head i-bem" data-bem='{"header":{}}'><div class="header__layout"><a class="logo header__logo" href="../../../"><svg class="logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 84"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"/></svg></a><div class="lang-switcher header__lang">EN<span class="lang-switcher__separator"> </span><a class="lang-switcher__link" href="https://ru-test.bem.info/technologies/classic/deps-spec/">RU</a></div><a class="header__forum" href="https://github.com/bem-site/bem.info/issues">Issues</a></div><div class="search header__search i-bem" data-bem='{"search":{}}'><div class="search__form"><span class="input input_type_search i-bem" data-bem='{"input":{}}'><span class="input__box"><input class="input__control" name="q" placeholder="Search the docs" autocomplete="off" type="search"></span></span><span class="search__submit" role="button" aria-label="search"><div class="search-icon search__submit-icon"><svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6"/><path d="M11 11l5 5"/></svg></div></span><div class="search__results" role="listbox"></div></div></div><ul class="breadcrumbs header__breadcrumbs"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../../../technologies/">Technology</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../../../technologies/classic/">Classical BEM stack</a></li></ul><div class="header__toggle"><span class="header__toggle-line"></span></div></div><div class="sitemap page__sitemap"><div class="sitemap__section sitemap__section_site_methodology"><h1 class="sitemap__title sitemap__title_site_methodology"><a class="sitemap__link" href="../../../methodology/">Methodology</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/quick-start/">Quick Start</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/key-concepts/">Key concepts</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/naming-convention/">Naming convention</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/css/">CSS</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/html/">HTML</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/js/">JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/filestructure/">File structure</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/redefinition-levels/">Redefinition level</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/block-modification/">Block modification</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/build/">Build</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/declarations/">Declarations</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/solved-problems/">Solved problems</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/history/">History</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/articles/">Articles</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../methodology/faq/">FAQ</a></li></ul></div><div class="sitemap__section sitemap__section_site_technologies"><h1 class="sitemap__title sitemap__title_site_technologies"><a class="sitemap__link" href="../../../technologies/">Technology</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../technologies/classic/">Classical BEM stack</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/classic/bemjson/">Data (BEMJSON)</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/classic/bem-xjst/">Templates (BEMHTML, BEMTREE)</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/classic/i-bem/">Client-side JavaScript (i-bem.js)</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/classic/deps/">Dependencies</a></li><li class="sitemap__tree-item-2"><strong class="sitemap__current">DEPS specification</strong></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/classic/project-stub/">Project stub</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../technologies/bem-react/">bem-react</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/motivation/">Why BEM if there's React?</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/quick-start/">Quick Start</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/structure/">Component structure</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/lazy/">Lazy modifiers</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/classname/">classname</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/classnames/">classnames</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/core/">core</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../technologies/bem-react/di/">di</a></li></ul></div><div class="sitemap__section sitemap__section_site_toolbox"><h1 class="sitemap__title sitemap__title_site_toolbox"><a class="sitemap__link" href="../../../toolbox/">Toolbox</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../toolbox/enb/">ENB</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/api/">API</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/techs/">Technologies for working with files</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/cli/">Using the command line</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/terms/">Terminology</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/build-project/">How to build a project</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/write-tech/">How to write a technology</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/express/">Automation with express</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/enb/packages/">ENB packages</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../toolbox/bemhint/">bemhint</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/bemhint/css-naming/">CSS naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/bemhint/fs-naming/">File naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/bemhint/deps-schema/">DEPS schema</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/bemhint/deps-specification/">DEPS specification</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../toolbox/bem-tools/">bem-tools</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../toolbox/bemmet/">bemmet</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../toolbox/sdk/">SDK</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-walk/">@bem/sdk.walk</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-config/">@bem/sdk.config</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-naming-entity/">@bem/sdk.naming.entity </a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-naming-cell-stringify/">@bem/sdk.naming.cell.stringify </a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-naming-cell-pattern-parser/">@bem/sdk.naming.cell.pattern-parser</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-naming-file-stringify/">@bem/sdk.naming.file.stringify</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-decl/">@bem/sdk.decl </a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-bemjson-to-decl/">@bem/sdk.bemjson-to-decl</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-bemjson-to-jsx/">@bem/sdk.bemjson-to-jsx</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-import-notation/">@bem/sdk.import-notation</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-graph/">@bem/sdk.graph</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-deps/">@bem/sdk.deps</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-entity-name/">@bem/sdk.entity-name</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-file/">@bem/sdk.file</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-cell/">@bem/sdk.cell</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-bundle/">@bem/sdk.bundle</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../toolbox/sdk/bem-bemjson-node/">@bem/sdk.bemjson-node</a></li></ul></div><div class="sitemap__section sitemap__section_site_libraries"><h1 class="sitemap__title sitemap__title_site_libraries"><a class="sitemap__link" href="../../../libraries/">Libraries</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../libraries/classic/">Classic BEM libraries</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../libraries/classic/bem-core/">bem-core</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../libraries/classic/bem-components/">bem-components</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../libraries/classic/bem-history/">bem-history</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../libraries/classic/principles/">Principles of BEM library development</a></li></ul></div><div class="sitemap__section sitemap__section_site_tutorials"><h1 class="sitemap__title sitemap__title_site_tutorials"><a class="sitemap__link" href="../../../tutorials/">Tutorials</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="../../../tutorials/classic/">Classical BEM stack</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../tutorials/classic/quick-start-static/">Creating a static page</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../tutorials/classic/start-with-project-stub/">Starting a static BEM project</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../tutorials/classic/start-with-bem-express/">Starting a dynamic BEM project</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../tutorials/classic/i-bem/">i-bem.js tutorial</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="../../../tutorials/classic/dist-quick-start/">Dist bem-components: adding blocks to a page</a></li></ul></div></div><div class="page__menu"><ul class="nav page__nav"><li class="nav__item"><div class="nav__title" style="margin-left:16px"><a class="nav__link" href="../../../technologies/classic/bemjson/">Data (BEMJSON)</a></div><div class="nav__content" style="margin-left:16px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bemjson/#overview">Overview</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bemjson/#conventions-for-standard-bemjson-modes">Conventions for standard BEMJSON modes</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:16px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/">Templates (BEMHTML, BEMTREE)</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:32px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/7/">7.x</a></div><div class="nav__content" style="margin-left:32px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/#what-is-bem-xjst">What is bem-xjst?</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/#features">Features</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/7/quick-start/">Quick Start</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/quick-start/#installation">Installation</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/quick-start/#basic-example">Basic example</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/7/api/">API</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/api/#choosing-an-engine-compiling-and-applying-templates">Choosing an engine, compiling and applying templates</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/api/#adding-templates">Adding templates</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/api/#settings">Settings</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/api/#bundling">Bundling</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/7/templates-syntax/">Templates syntax</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-syntax/#template-predicate">Template predicate</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-syntax/#list-of-subpredicates">List of subpredicates</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-syntax/#template-body">Template body</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-syntax/#user-defined-modes">User-defined modes</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-syntax/#bemtree">BEMTREE</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/7/templates-context/">Context</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-context/#normalized-information-about-the-current-bem-entity">Normalized information about the current BEM entity</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-context/#current-bemjson-node">Current BEMJSON node</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-context/#helpers">Helpers</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-context/#user-defined-custom-fields">User-defined custom fields</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/templates-context/#methods-for-controlling-the-templating-process">Methods for controlling the templating process</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/7/runtime/">Runtime</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/runtime/#how-the-template-engine-runtime-works">How the template engine runtime works</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/runtime/#templates-for-any-entities">Templates for any entities</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/7/runtime/#instructions-for-controlling-runtime">Instructions for controlling runtime</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:32px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/8/">8.x</a></div><div class="nav__content" style="margin-left:32px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/#what-is-bem-xjst">What is bem-xjst?</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/#features">Features</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/8/quick-start/">Quick Start</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/quick-start/#installation">Installation</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/quick-start/#basic-example">Basic example</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/8/api/">API</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/api/#choosing-an-engine-compiling-and-applying-templates">Choosing an engine, compiling and applying templates</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/api/#adding-templates">Adding templates</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/api/#settings">Settings</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/api/#bundling">Bundling</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/api/#source-maps">Source maps</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/8/templates-syntax/">Templates syntax</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-syntax/#template-predicate">Template predicate</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-syntax/#list-of-subpredicates">List of subpredicates</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-syntax/#template-body">Template body</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-syntax/#user-defined-modes">User-defined modes</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-syntax/#bemtree">BEMTREE</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/8/templates-context/">Context</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-context/#normalized-information-about-the-current-bem-entity">Normalized information about the current BEM entity</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-context/#current-bemjson-node">Current BEMJSON node</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-context/#helpers">Helpers</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-context/#user-defined-custom-fields">User-defined custom fields</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/templates-context/#methods-for-controlling-the-templating-process">Methods for controlling the templating process</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:48px"><a class="nav__link" href="../../../technologies/classic/bem-xjst/8/runtime/">Runtime</a></div><div class="nav__content" style="margin-left:48px"><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/runtime/#how-the-template-engine-runtime-works">How the template engine runtime works</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/runtime/#templates-for-any-entities">Templates for any entities</a><a class="nav__link nav__chapter" href="../../../technologies/classic/bem-xjst/8/runtime/#instructions-for-controlling-runtime">Instructions for controlling runtime</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:16px"><a class="nav__link" href="../../../technologies/classic/i-bem/">Client-side JavaScript (i-bem.js)</a></div><div class="nav__content" style="margin-left:16px"><a class="nav__link nav__chapter" href="../../../technologies/classic/i-bem/#i-bemjs-javascript-framework-for-bem">i-bem.js: JavaScript framework for BEM</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:16px"><a class="nav__link" href="../../../technologies/classic/deps/">Dependencies</a></div><div class="nav__content" style="margin-left:16px"><a class="nav__link nav__chapter" href="../../../technologies/classic/deps/#introduction">Introduction</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps/#notation">Notation</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps/#deps-syntax">DEPS syntax</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps/#examples">Examples</a></div></li><li class="nav__item nav__item_current"><div class="nav__title" style="margin-left:16px">DEPS specification</div><div class="nav__content nav__content_visible" style="margin-left:16px"><a class="nav__link nav__chapter" href="../../../technologies/classic/deps-spec/#introduction">Introduction</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps-spec/#notation">Notation</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps-spec/#deps-syntax">DEPS syntax</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps-spec/#fields-of-a-deps-entity">Fields of a DEPS entity</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps-spec/#syntactic-sugar">Syntactic sugar</a><a class="nav__link nav__chapter" href="../../../technologies/classic/deps-spec/#examples-of-declarations">Examples of declarations</a></div></li><li class="nav__item"><div class="nav__title" style="margin-left:16px"><a class="nav__link" href="../../../technologies/classic/project-stub/">Project stub</a></div><div class="nav__content" style="margin-left:16px"><a class="nav__link nav__chapter" href="../../../technologies/classic/project-stub/#installation-requirements">Installation requirements</a><a class="nav__link nav__chapter" href="../../../technologies/classic/project-stub/#supported-browsers">Supported browsers</a><a class="nav__link nav__chapter" href="../../../technologies/classic/project-stub/#installation">Installation</a><a class="nav__link nav__chapter" href="../../../technologies/classic/project-stub/#usage">Usage</a><a class="nav__link nav__chapter" href="../../../technologies/classic/project-stub/#docs">Docs</a><a class="nav__link nav__chapter" href="../../../technologies/classic/project-stub/#project-stub-based-projects">Project-stub based projects</a><a class="nav__link nav__chapter" href="../../../technologies/classic/project-stub/#videos">Videos</a></div></li></ul></div><div class="page__main"><div class="article page__content"><h1 class="article__heading article__heading_level_1" id="deps-specification"><a class="article__heading-anchor" href="#deps-specification"></a>DEPS specification</h1><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#introduction">Introduction</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#notation">Notation</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#deps-syntax">DEPS syntax</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#fields-of-a-deps-entity">DEPS entity fields</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#syntactic-sugar">Syntactic sugar</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#examples-of-declarations">Examples of declarations</a></p></li></ul><h2 class="article__heading article__heading_level_2" id="introduction"><a class="article__heading-anchor" href="#introduction"></a>Introduction</h2><p class="article__paragraph"><strong class="article__strong">DEPS</strong> is a <a class="article__link" href="../../../technologies/classic/deps/">technology for defining dependencies</a> in BEM.</p><p class="article__paragraph">A <strong class="article__strong">DEPS entity</strong> is an entity that defines a dependency between <a class="article__link" href="../../../methodology/key-concepts/#bem-entity">BEM entities</a>.</p><p class="article__paragraph">Dependencies are defined as JavaScript objects in files with the <code class="article__inline-code">.deps.js</code> extension.</p><p class="article__paragraph">The full notation of a DEPS entity looks like this:</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* DEPS entity */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'block-name'</span>,
+    <span class="hljs-attr">elem</span>: <span class="hljs-string">'elem-name'</span>,
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'modName'</span>,
+    <span class="hljs-attr">val</span>: <span class="hljs-string">'modValue'</span>,
+    <span class="hljs-attr">tech</span>: <span class="hljs-string">'techName'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [ <span class="hljs-comment">/* BEM entity */</span> ],
+    <span class="hljs-attr">mustDeps</span>: [ <span class="hljs-comment">/* BEM entity */</span> ],
+    <span class="hljs-attr">noDeps</span>: [ <span class="hljs-comment">/* BEM entity */</span> ]
+})
+</pre><blockquote class="article__blockquote"><p class="article__paragraph"><strong class="article__strong">Note</strong> All fields are optional.</p></blockquote><h2 class="article__heading article__heading_level_2" id="notation"><a class="article__heading-anchor" href="#notation"></a>Notation</h2><p class="article__paragraph">To abbreviate dependencies in comments, use the following notation:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><code class="article__inline-code">/* b1 → b2 */</code>&nbsp;— block <code class="article__inline-code">b1</code>is dependent on block <code class="article__inline-code">b2</code> (<code class="article__inline-code">shouldDeps</code>)</p></li><li class="article__list-item"><p class="article__paragraph"><code class="article__inline-code">/* b1 ⇒ b2 */</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on block <code class="article__inline-code">b2</code> (<code class="article__inline-code">mustDeps</code>)</p></li><li class="article__list-item"><p class="article__paragraph"><code class="article__inline-code">/* b1 → b1__e1 */</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on its element <code class="article__inline-code">b1__e1</code></p></li><li class="article__list-item"><p class="article__paragraph"><code class="article__inline-code">/* b1 → b1_m1_v1 */</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on its modifier <code class="article__inline-code">b1_m1_v1</code></p></li><li class="article__list-item"><p class="article__paragraph"><code class="article__inline-code">/* b1 → b1__e1_m1_v1 */</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on the modifier of its element <code class="article__inline-code">b1__e1_m1_v1</code></p></li><li class="article__list-item"><p class="article__paragraph"><code class="article__inline-code">/* b1.js → b2.bemhtml */</code>&nbsp;— block <code class="article__inline-code">b1</code> in the JavaScript implementation is dependent on block <code class="article__inline-code">b2</code> in the BEMHTML implementation</p></li></ul><h2 class="article__heading article__heading_level_2" id="deps-syntax"><a class="article__heading-anchor" href="#deps-syntax"></a>DEPS syntax</h2><p class="article__paragraph">A DEPS entity can be represented in the <code class="article__inline-code">.deps.js</code> file using:</p><ol class="article__list article__list_ordered"><li class="article__list-item"><p class="article__paragraph">Parentheses <code class="article__inline-code">()</code>.</p></li></ol><pre class="article__code article__code_correctHeight">({
+    <span class="hljs-comment">/* DEPS entity */</span>
+})
+</pre><ol class="article__list article__list_ordered"><li class="article__list-item"><p class="article__paragraph">An array literal <code class="article__inline-code">[]</code>.</p></li></ol><pre class="article__code">[{
+    <span class="hljs-comment">/* DEPS entity */</span>
+  },
+  {
+    <span class="hljs-comment">/* DEPS entity */</span>
+}]
+</pre><h2 class="article__heading article__heading_level_2" id="fields-of-a-deps-entity"><a class="article__heading-anchor" href="#fields-of-a-deps-entity"></a>Fields of a DEPS entity</h2><p class="article__paragraph">They can be divided into the following groups:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">Defining the BEM entity:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#block">block</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#elem">elem</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#mod">mod</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#val">val</a></p></li></ul></li><li class="article__list-item"><p class="article__paragraph">Defining the implementation of the BEM entity:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#field-that-defines-the-implementation-technology-for-the-bem-entity">tech</a></p></li></ul></li><li class="article__list-item"><p class="article__paragraph">Defining the dependency:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#mustdeps">mustDeps</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#shoulddeps">shouldDeps</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#nodeps">noDeps</a></p></li></ul></li></ul><blockquote class="article__blockquote"><p class="article__paragraph"><strong class="article__strong">Note</strong> In addition to the fields described, you can use <a class="article__link" href="#syntactic-sugar">syntactic sugar</a> to improve code readability.</p></blockquote><h3 class="article__heading article__heading_level_3" id="fields-that-define-the-bem-entity"><a class="article__heading-anchor" href="#fields-that-define-the-bem-entity"></a>Fields that define the BEM entity</h3><p class="article__paragraph">The fields specify which BEM entity needs the dependencies included. They are optional and can be restored from the context by the file name.</p><p class="article__paragraph">So the statements for the file <code class="article__inline-code">b1__e1_m1_v1.deps.js</code> are equivalent to:</p><pre class="article__code"><span class="hljs-comment">/* b1__e1_m1_v1 → b2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span>,
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>,
+    <span class="hljs-attr">val</span>: <span class="hljs-string">'v1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">block</span>: <span class="hljs-string">'b2'</span> }
+})
+</pre><pre class="article__code"><span class="hljs-comment">/* b1__e1_m1_v1 → b2 */</span>
+({
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">block</span>: <span class="hljs-string">'b2'</span> }
+})
+</pre><h4 class="article__heading article__heading_level_4" id="block"><a class="article__heading-anchor" href="#block"></a>block</h4><p class="article__paragraph">The <code class="article__inline-code">block</code> field sets the name of the block.</p><p class="article__paragraph">Type: <code class="article__inline-code">String</code>.</p><pre class="article__code"><span class="hljs-comment">// Block b1</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>
+})
+</pre><h4 class="article__heading article__heading_level_4" id="elem"><a class="article__heading-anchor" href="#elem"></a>elem</h4><p class="article__paragraph">The <code class="article__inline-code">elem</code> field sets the name of the element.</p><p class="article__paragraph">Type: <code class="article__inline-code">String</code>.</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">// Element b1__e1</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span>
+})
+</pre><h4 class="article__heading article__heading_level_4" id="mod"><a class="article__heading-anchor" href="#mod"></a>mod</h4><p class="article__paragraph">The <code class="article__inline-code">mod</code> field sets the name of the modifier for the block or element.</p><p class="article__paragraph">Type: <code class="article__inline-code">String</code>.</p><pre class="article__code"><span class="hljs-comment">// Modifier of the block b1_m1 set to true</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>
+})
+
+<span class="hljs-comment">// Modifier of the element b1__e1_m1 set to true</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span>,
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>
+})
+</pre><h4 class="article__heading article__heading_level_4" id="val"><a class="article__heading-anchor" href="#val"></a>val</h4><p class="article__paragraph">The <code class="article__inline-code">val</code> field sets the modifier value. If <code class="article__inline-code">val</code> is omitted, the modifier is assumed to be set to <code class="article__inline-code">true</code>.</p><p class="article__paragraph">Type: <code class="article__inline-code">String</code>, <code class="article__inline-code">Boolean</code>.</p><p class="article__paragraph">The examples below specify the accepted data type:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">String (<code class="article__inline-code">String</code>).</p><pre class="article__code"><span class="hljs-comment">// Modifier b1_m1_v1 set to v1</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>,
+    <span class="hljs-attr">val</span>: <span class="hljs-string">'v1'</span>
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Boolean, Logical type (<code class="article__inline-code">Boolean</code>).</p><pre class="article__code"><span class="hljs-comment">// Modifier b1_m1 set to true</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>,
+    <span class="hljs-attr">val</span>: <span class="hljs-literal">true</span>
+})
+</pre></li></ul><h3 class="article__heading article__heading_level_3" id="field-that-defines-the-implementation-technology-for-the-bem-entity"><a class="article__heading-anchor" href="#field-that-defines-the-implementation-technology-for-the-bem-entity"></a>Field that defines the implementation technology for the BEM entity</h3><p class="article__paragraph">The <code class="article__inline-code">tech</code> field specifies which <a class="article__link" href="../../../methodology/key-concepts/#implementation-technology">implementation technology</a> to include the dependency for. If <code class="article__inline-code">tech</code> is omitted, the dependency is considered general and applies to all technologies.</p><p class="article__paragraph">Including dependencies for a technology is used, for example, to create a client JavaScript bundle that only has templates for the blocks that will be used in the browser. In this case, part of the templating happens on the server side, so some of the templates are never used in the client.</p><p class="article__paragraph">Type: <code class="article__inline-code">String</code>.</p><pre class="article__code article__code_correctHeight">({
+<span class="hljs-comment">// Block b1 in JavaScript</span>
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">tech</span>: <span class="hljs-string">'js'</span>
+})
+</pre><h3 class="article__heading article__heading_level_3" id="fields-that-define-the-dependency"><a class="article__heading-anchor" href="#fields-that-define-the-dependency"></a>Fields that define the dependency</h3><p class="article__paragraph">The <code class="article__inline-code">shouldDeps</code> and<code class="article__inline-code">mustDeps</code> fields define the dependency, and <code class="article__inline-code">noDeps</code> cancels it</p><h4 class="article__heading article__heading_level_4" id="shoulddeps"><a class="article__heading-anchor" href="#shoulddeps"></a>shouldDeps</h4><p class="article__paragraph">The <code class="article__inline-code">shouldDeps</code> field defines dependencies that can be included in any order.</p><p class="article__paragraph">Type: <code class="article__inline-code">Object[]</code>.</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → BEM entity */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        { <span class="hljs-comment">/* BEM entity */</span> }
+    ]
+})
+</pre><h4 class="article__heading article__heading_level_4" id="mustdeps"><a class="article__heading-anchor" href="#mustdeps"></a>mustDeps</h4><p class="article__paragraph">The <code class="article__inline-code">mustDeps</code> field specifies dependencies that are added to the build results before the code of the BEM entity where these dependencies are declared.</p><p class="article__paragraph">Type: <code class="article__inline-code">Object[]</code>.</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 ⇒ BEM entity */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mustDeps</span>: [
+        { <span class="hljs-comment">/* BEM entity */</span> }
+    ]
+})
+</pre><h4 class="article__heading article__heading_level_4" id="nodeps"><a class="article__heading-anchor" href="#nodeps"></a>noDeps</h4><p class="article__paragraph">The <code class="article__inline-code">noDeps</code> field cancels existing dependencies declared on other <a class="article__link" href="../../../methodology/key-concepts/#redefinition-level">redefinition levels</a>.</p><p class="article__paragraph">Type: <code class="article__inline-code">Object[]</code>.</p><pre class="article__code"><span class="hljs-comment">/* common.blocks
+   b1 → BEM entity */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        { <span class="hljs-comment">/* BEM entity */</span> }
+    ]
+})
+
+<span class="hljs-comment">/* desktop.blocks */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">noDeps</span>: [
+        { <span class="hljs-comment">/* BEM entity */</span> }
+    ]
+})
+</pre><p class="article__paragraph">In this example, dependencies on the <code class="article__inline-code">common.blocks</code> level include a BEM entity that is necessary for implementing the <code class="article__inline-code">b1</code> block. On the <code class="article__inline-code">desktop.blocks</code> level, this dependency is canceled.</p><h2 class="article__heading article__heading_level_2" id="syntactic-sugar"><a class="article__heading-anchor" href="#syntactic-sugar"></a>Syntactic sugar</h2><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#elem-1">elem</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#elems">elems</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#mods">mods</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#shoulddeps-mustdeps-nodeps">shouldDeps, mustDeps, noDeps</a></p></li></ul><h3 class="article__heading article__heading_level_3" id="elem-1"><a class="article__heading-anchor" href="#elem-1"></a>elem</h3><p class="article__paragraph">The <code class="article__inline-code">elem</code> field can accept an array of strings as a value (<code class="article__inline-code">String[]</code>):</p><pre class="article__code"><span class="hljs-comment">// Elements b1__e1 and b1__e2</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elem</span>: [
+        <span class="hljs-string">'e1'</span>,
+        <span class="hljs-string">'e2'</span>
+    ]
+})
+</pre><h3 class="article__heading article__heading_level_3" id="elems"><a class="article__heading-anchor" href="#elems"></a>elems</h3><p class="article__paragraph">The <code class="article__inline-code">elems</code> field sets the element name and expands into <code class="article__inline-code">shouldDeps</code>. So the statements for the file <code class="article__inline-code">b1.deps.js</code> are equivalent to:</p><pre class="article__code">({
+    <span class="hljs-comment">/* b1 → b1__e1; b1 → b1__e2 */</span>
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: [
+      <span class="hljs-string">'e1'</span>,
+      <span class="hljs-string">'e2'</span>
+    ]
+})
+</pre><pre class="article__code">({
+    <span class="hljs-comment">/* b1 → b1__e1; b1 → b1__e2 */</span>
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+      {
+        <span class="hljs-attr">elem</span>: [
+            <span class="hljs-string">'e1'</span>,
+            <span class="hljs-string">'e2'</span>
+        ]
+      }
+    ]
+})
+</pre><p class="article__paragraph">Type: <code class="article__inline-code">String</code>, <code class="article__inline-code">Object</code>, <code class="article__inline-code">String[]</code>, <code class="article__inline-code">Object[]</code>.</p><p class="article__paragraph">The examples below specify the accepted data type:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><code class="article__inline-code">String</code>.</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1__e1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: <span class="hljs-string">'e1'</span>
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Object (<code class="article__inline-code">Object</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → { ElemDepsEntity } */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: { <span class="hljs-comment">/* { ElemDepsEntity } */</span> }
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Array of strings (<code class="article__inline-code">String[]</code>).</p><pre class="article__code"><span class="hljs-comment">/* b1 → b1__e1; b1 → b1__e2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: [
+      <span class="hljs-string">'e1'</span>,
+      <span class="hljs-string">'e2'</span>
+    ]
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Array of objects (<code class="article__inline-code">Object[]</code>).</p><pre class="article__code"><span class="hljs-comment">/* b1 → { ElemDepsEntity }; b1 → { ElemDepsEntity } */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: [
+      { <span class="hljs-comment">/* { ElemDepsEntity } */</span> },
+      { <span class="hljs-comment">/* { ElemDepsEntity } */</span> }
+    ]
+})
+</pre></li></ul><p class="article__paragraph"><strong class="article__strong">ElemDepsEntity</strong> is a JavaScript object with the following fields:</p><pre class="article__code"><span class="hljs-comment">/* elemDepsEntity */</span>
+({
+    <span class="hljs-attr">elem</span>: <span class="hljs-string">'elem-name'</span>,
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'modName'</span>,
+    <span class="hljs-attr">val</span>: <span class="hljs-string">'modValue'</span>,
+    <span class="hljs-attr">tech</span>: <span class="hljs-string">'techName'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [ <span class="hljs-comment">/* BEM entity */</span> ],
+    <span class="hljs-attr">mustDeps</span>: [ <span class="hljs-comment">/* BEM entity */</span> ],
+    <span class="hljs-attr">noDeps</span>: [ <span class="hljs-comment">/* BEM entity */</span> ]
+})
+</pre><blockquote class="article__blockquote"><p class="article__paragraph"><strong class="article__strong">Note</strong> The <code class="article__inline-code">elem</code> field is required.</p></blockquote><h3 class="article__heading article__heading_level_3" id="mods"><a class="article__heading-anchor" href="#mods"></a>mods</h3><p class="article__paragraph">The <code class="article__inline-code">mods</code> field sets the modifier name and value and expands into <code class="article__inline-code">shouldDeps</code>. So the statements for the file <code class="article__inline-code">b1.deps.js</code> are equivalent to:</p><pre class="article__code article__code_correctHeight">({
+    <span class="hljs-comment">/* b1 → b1_m1_v1; b1 → b1_m1_v2 */</span>
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: [
+        <span class="hljs-string">'v1'</span>,
+        <span class="hljs-string">'v2'</span>
+      ]
+    }
+})
+</pre><pre class="article__code">({
+    <span class="hljs-comment">/* b1 → b1_m1_v1; b1 → b1_m1_v2 */</span>
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+      {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+        <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>,
+        <span class="hljs-attr">val</span>: <span class="hljs-string">'v1'</span>
+      },
+      {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+        <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>,
+        <span class="hljs-attr">val</span>: <span class="hljs-string">'v1'</span>
+      }
+    ]
+})
+</pre><p class="article__paragraph">Type: <code class="article__inline-code">String[]</code>, <code class="article__inline-code">Object</code>.</p><p class="article__paragraph">The examples below specify the accepted data type:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">Array of strings (<code class="article__inline-code">String[]</code>).</p><pre class="article__code"><span class="hljs-comment">/* b1 → b1_m1; b1 → b1_m2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: [
+      <span class="hljs-string">'m1'</span>,
+      <span class="hljs-string">'m2'</span>
+    ]
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">The object where the property value might be:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">String (<code class="article__inline-code">String</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1_v1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: <span class="hljs-string">'v1'</span> }
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Boolean, Logical type (<code class="article__inline-code">Boolean</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: <span class="hljs-literal">true</span> }
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Array of strings (<code class="article__inline-code">String[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1_v1; b1 → b1_m1_v2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: [
+        <span class="hljs-string">'v1'</span>,
+        <span class="hljs-string">'v2'</span>
+      ]
+    }
+})
+</pre></li></ul></li></ul><h3 class="article__heading article__heading_level_3" id="shoulddeps-mustdeps-nodeps"><a class="article__heading-anchor" href="#shoulddeps-mustdeps-nodeps"></a>shouldDeps, mustDeps, noDeps</h3><p class="article__paragraph">Type: <code class="article__inline-code">String</code>, <code class="article__inline-code">Object</code>, <code class="article__inline-code">String[]</code>.</p><p class="article__paragraph">The examples below specify the accepted data type:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">String (<code class="article__inline-code">String</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: <span class="hljs-string">'b2'</span>
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Object (<code class="article__inline-code">Object</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → BEM entity */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-comment">/* BEM entity */</span> }
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">Array of strings (<code class="article__inline-code">String[]</code>).</p><pre class="article__code"><span class="hljs-comment">/* b1 → b2; b1 → b3 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        <span class="hljs-string">'b2'</span>,
+        <span class="hljs-string">'b3'</span>
+    ]
+})
+</pre></li></ul><h2 class="article__heading article__heading_level_2" id="examples-of-declarations"><a class="article__heading-anchor" href="#examples-of-declarations"></a>Examples of declarations</h2><ul class="article__list"><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#including-a-block">Including a block</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#including-an-element">Including an element</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#including-a-boolean-modifier">Including a boolean modifier</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#including-a-key-value-modifier">Including a key-value modifier</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#including-dependencies-for-technology">Including dependencies for a technology</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#elem--elems">elem &amp; elems</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#mod--mods">mod &amp; mods</a></p></li><li class="article__list-item"><p class="article__paragraph"><a class="article__link" href="#elems--mods">elems &amp; mods</a></p></li></ul><h3 class="article__heading article__heading_level_3" id="including-a-block"><a class="article__heading-anchor" href="#including-a-block"></a>Including a block</h3><p class="article__paragraph"><code class="article__inline-code">b1 → b2</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on block <code class="article__inline-code">b2</code>.</p><p class="article__paragraph">The dependency can be declared as:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">An object array (<code class="article__inline-code">Object[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        { <span class="hljs-attr">block</span>: <span class="hljs-string">'b2'</span> }
+    ]
+})
+</pre><p class="article__paragraph"><strong class="article__strong">Syntactic sugar</strong></p></li><li class="article__list-item"><p class="article__paragraph">A string (<code class="article__inline-code">String</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: <span class="hljs-string">'b2'</span>
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">An object (<code class="article__inline-code">Object</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">block</span>: <span class="hljs-string">'b2'</span> }
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">An array of strings (<code class="article__inline-code">String[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        <span class="hljs-string">'b2'</span>
+    ]
+})
+</pre></li></ul><h3 class="article__heading article__heading_level_3" id="including-an-element"><a class="article__heading-anchor" href="#including-an-element"></a>Including an element</h3><p class="article__paragraph"><code class="article__inline-code">b1 → b1__e1</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on its element <code class="article__inline-code">b1__e1</code>.</p><p class="article__paragraph">The dependency can be declared as:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">An array of objects (<code class="article__inline-code">Object[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1__e1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        { <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>, <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span> }
+    ]
+})
+</pre><p class="article__paragraph"><strong class="article__strong">Syntactic sugar</strong></p></li><li class="article__list-item"><p class="article__paragraph">A string (<code class="article__inline-code">String</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1__e1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: <span class="hljs-string">'e1'</span>
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">An object (<code class="article__inline-code">Object</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1__e1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span> }
+})
+</pre><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1__e1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: { <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span> }
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">An array of strings (<code class="article__inline-code">String[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1__e1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,  
+    <span class="hljs-attr">elems</span>: [
+      <span class="hljs-string">'e1'</span>
+    ]
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">An array of objects (<code class="article__inline-code">Object[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1__e1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: [
+      { <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span> }
+    ]
+})
+</pre></li></ul><h3 class="article__heading article__heading_level_3" id="including-a-boolean-modifier"><a class="article__heading-anchor" href="#including-a-boolean-modifier"></a>Including a boolean modifier</h3><p class="article__paragraph"><code class="article__inline-code">b1 → b1_m1</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on its boolean modifier <code class="article__inline-code">b1_m1</code>.</p><p class="article__paragraph">The dependency can be declared as:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">An array of objects (<code class="article__inline-code">Object[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        { <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>, <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>, <span class="hljs-attr">val</span>: <span class="hljs-literal">true</span> }
+    ]
+})
+</pre><p class="article__paragraph"><strong class="article__strong">Syntactic sugar</strong></p></li><li class="article__list-item"><p class="article__paragraph">An object (<code class="article__inline-code">Object</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>, <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>, <span class="hljs-attr">val</span>: <span class="hljs-literal">true</span>  }
+})
+</pre><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>, <span class="hljs-attr">val</span>: <span class="hljs-literal">true</span> }
+})
+</pre><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: <span class="hljs-literal">true</span> }
+})
+</pre></li><li class="article__list-item"><p class="article__paragraph">An array of strings (<code class="article__inline-code">String[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: [
+      <span class="hljs-string">'m1'</span>
+    ]
+})
+</pre></li></ul><h3 class="article__heading article__heading_level_3" id="including-a-key-value-modifier"><a class="article__heading-anchor" href="#including-a-key-value-modifier"></a>Including a key-value modifier</h3><p class="article__paragraph"><code class="article__inline-code">b1 → b1_m1_v1</code>&nbsp;— block <code class="article__inline-code">b1</code> is dependent on its key-value modifier <code class="article__inline-code">b1_m1_v1</code>.</p><p class="article__paragraph">The dependency can be declared as:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">An array of objects (<code class="article__inline-code">Object[]</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1_v1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        { <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>, <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>, <span class="hljs-attr">val</span>: <span class="hljs-string">'v1'</span> }
+    ]
+})
+</pre><p class="article__paragraph"><strong class="article__strong">Syntactic sugar</strong></p></li><li class="article__list-item"><p class="article__paragraph">An object (<code class="article__inline-code">Object</code>).</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1_v1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>, <span class="hljs-attr">val</span>: <span class="hljs-string">'v1'</span> }
+})
+</pre><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1 → b1_m1_v1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: <span class="hljs-string">'v1'</span> }
+})
+</pre><pre class="article__code"><span class="hljs-comment">/* b1 → b1_m1_v1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: [
+        <span class="hljs-string">'v1'</span>
+      ]
+    }
+})
+</pre></li></ul><h3 class="article__heading article__heading_level_3" id="including-dependencies-for-technology"><a class="article__heading-anchor" href="#including-dependencies-for-technology"></a>Including dependencies for technology</h3><p class="article__paragraph"><code class="article__inline-code">b1.js → b2.bemhtml</code>&nbsp;— block <code class="article__inline-code">b1</code> in the JavaScript implementation is dependent on block <code class="article__inline-code">b2</code> in the BEMHTML implementation</p><p class="article__paragraph">The dependency can be declared as:</p><ul class="article__list"><li class="article__list-item"><p class="article__paragraph">An array of objects (<code class="article__inline-code">Object[]</code>).</p><pre class="article__code"><span class="hljs-comment">/* b1.js → b2.bemhtml */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">tech</span>: <span class="hljs-string">'js'</span>,
+    <span class="hljs-attr">shouldDeps</span>: [
+        { <span class="hljs-attr">block</span>: <span class="hljs-string">'b2'</span>, <span class="hljs-attr">tech</span>: <span class="hljs-string">'bemhtml'</span> }
+    ]
+})
+</pre><p class="article__paragraph"><strong class="article__strong">Syntactic sugar</strong></p></li><li class="article__list-item"><p class="article__paragraph">An object (<code class="article__inline-code">Object</code>).</p><pre class="article__code"><span class="hljs-comment">/* b1.js → b2.bemhtml */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">tech</span>: <span class="hljs-string">'js'</span>,
+    <span class="hljs-attr">shouldDeps</span>: { <span class="hljs-attr">block</span>: <span class="hljs-string">'b2'</span>, <span class="hljs-attr">tech</span>: <span class="hljs-string">'bemhtml'</span> }
+})
+</pre></li></ul><h3 class="article__heading article__heading_level_3" id="elem--elems"><a class="article__heading-anchor" href="#elem--elems"></a>elem &amp; elems</h3><p class="article__paragraph">Using the <code class="article__inline-code">elem</code> and <code class="article__inline-code">elems</code> fields together.</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1__e1 → b1__e2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elem</span>: <span class="hljs-string">'e1'</span>,  
+    <span class="hljs-attr">elems</span>: [
+      <span class="hljs-string">'e1'</span>,
+      <span class="hljs-string">'e2'</span>
+    ]
+})
+</pre><blockquote class="article__blockquote"><p class="article__paragraph"><strong class="article__strong">Note</strong> Self-dependencies <code class="article__inline-code">/* b1__e1 → b1__e1 */</code> don't have a purpose, so they are ignored.</p></blockquote><h3 class="article__heading article__heading_level_3" id="mod--mods"><a class="article__heading-anchor" href="#mod--mods"></a>mod &amp; mods</h3><p class="article__paragraph">Using the <code class="article__inline-code">mod</code> and <code class="article__inline-code">mods</code> fields together.</p><pre class="article__code article__code_correctHeight"><span class="hljs-comment">/* b1_m1_v1 → b1_m1_v2 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,   
+    <span class="hljs-attr">mod</span>: <span class="hljs-string">'m1'</span>,
+    <span class="hljs-attr">val</span>: <span class="hljs-string">'v1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: [
+        <span class="hljs-string">'v1'</span>,
+        <span class="hljs-string">'v2'</span>
+      ]
+    }
+})
+</pre><blockquote class="article__blockquote"><p class="article__paragraph"><strong class="article__strong">Note</strong> Self-dependencies <code class="article__inline-code">/* b1_m1_v1 → b1_m1_v1 */</code> don't have a purpose, so they are ignored.</p></blockquote><h3 class="article__heading article__heading_level_3" id="elems--mods"><a class="article__heading-anchor" href="#elems--mods"></a>elems &amp; mods</h3><p class="article__paragraph">Using the <code class="article__inline-code">elems</code> and <code class="article__inline-code">mods</code> fields together.</p><pre class="article__code"><span class="hljs-comment">/* b1 → b1__e1; b1 → b1_m1_v1 */</span>
+({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'b1'</span>,
+    <span class="hljs-attr">elems</span>: <span class="hljs-string">'e1'</span>,
+    <span class="hljs-attr">mods</span>: { <span class="hljs-attr">m1</span>: <span class="hljs-string">'v1'</span> }
+})
+</pre></div><ul class="article-rewind article-rewind_type_static article-rewind_lang_en article__rewind"><li class="article-rewind__prev"><a class="article-rewind__prev-link" href="../../../technologies/classic/deps/">Dependencies</a></li> <li class="article-rewind__next"><div class="article-rewind__next-text"></div><a class="article-rewind__next-link" href="../../../technologies/classic/project-stub/">Project stub</a></li></ul></div><div class="page__side"><aside class="aside page__aside"><div class="aside__group"><ul class="article-tags aside__tags"><li class="article-tags__tag"><a class="article-tags__link">deps</a></li></ul><div class="social-likes aside__social"><a class="social-likes__service social-likes__service_type_facebook" href="https://www.facebook.com/sharer.php?s=100&amp;url=https%3A%2F%2Fen-test.bem.info%2Ftechnologies%2Fclassic%2Fdeps-spec%2F&amp;title=DEPS%20specification&amp;image=">Facebook</a> <a class="social-likes__service social-likes__service_type_vk" href="http://vk.com/share.php?&amp;url=https%3A%2F%2Fen-test.bem.info%2Ftechnologies%2Fclassic%2Fdeps-spec%2F&amp;title=DEPS%20specification&amp;image=">VKontakte</a> <a class="social-likes__service social-likes__service_type_twitter" href="https://twitter.com/share?&amp;url=https%3A%2F%2Fen-test.bem.info%2Ftechnologies%2Fclassic%2Fdeps-spec%2F&amp;title=DEPS%20specification&amp;image=">Twitter</a></div></div><div class="article-amendments aside__amendments"><a class="article-amendments__edit article-amendments__link" href="http://prose.io/#bem-site/bem-method/blob/bem-info-data/platform/depsjs/specification.en.md">Edit</a><a class="article-amendments__issue article-amendments__link" href="https://github.com/bem-site/bem-method/issues/new">Report an issue</a></div></aside></div><footer class="footer page__foot"><div class="footer__layout"><ul class="footer__community"><li class="footer__channel"><a class="footer__channel-link" href="https://telegram.me/bem_en">Telegram</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://www.facebook.com/groups/bem.info/">Facebook</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://twitter.com/bem_en/">Twitter</a></li></ul></div></footer><script>(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16972024 = new Ya.Metrika({"id":"16972024","webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16972024" style="position:absolute; left:-9999px;"></div></noscript><div class="yandex-metrica-api i-bem" data-bem='{"yandex-metrica-api":{"counterId":"16972024"}}'></div><script src="../../../_client/client.js?4356" type="module"></script></body></html>
